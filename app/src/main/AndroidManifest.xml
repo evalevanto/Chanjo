@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eva.example.com.chanjo">
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="locale|orientation"
+        android:icon="@drawable/chnj"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Sign"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".home"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".about"
+            android:parentActivityName=".home"/>
+        <activity android:name=".kids"
+            android:parentActivityName=".home"/>
+        <activity android:name=".add"
+            android:parentActivityName=".kids"/>
+        <activity android:name=".cdc"
+            android:parentActivityName=".home"/>
+        <activity android:name=".Prof"
+            android:parentActivityName=".kids"/>
+
+        <receiver
+            android:name=".NotePublish"
+            android:enabled="true" />
+
+        <activity android:name=".SettingsActivity"
+            android:parentActivityName=".MainActivity"/>
+    </application>
+
+</manifest>

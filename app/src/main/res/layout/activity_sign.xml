@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="eva.example.com.chanjo.Sign"
+    android:background="@drawable/mom">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/rEGt"
+        android:id="@+id/txtReg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#ffffff" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:id="@+id/relativeLayout"
+        android:background="#9dd0cfcf">
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sIGNt"
+        android:id="@+id/btnSign"
+        android:textColor="#ffffff"
+        android:typeface="serif"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/edtPass2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtUser"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/jinA" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/edtPhone"
+        android:layout_below="@+id/edtUser"
+        android:layout_alignLeft="@+id/edtUser"
+        android:layout_alignStart="@+id/edtUser"
+        android:layout_marginTop="10dp"
+        android:hint="@string/nambari_ya_SImu" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtPass"
+        android:layout_below="@+id/edtPhone"
+        android:layout_alignLeft="@+id/edtPhone"
+        android:layout_alignStart="@+id/edtPhone"
+        android:layout_marginTop="10dp"
+        android:hint="@string/passd" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtPass2"
+        android:layout_below="@+id/edtPass"
+        android:layout_alignRight="@+id/edtPass"
+        android:layout_alignEnd="@+id/edtPass"
+        android:layout_marginTop="10dp"
+        android:hint="@string/hakiki_pword"
+         />
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgBack"
+        android:src="@android:drawable/ic_menu_revert"
+        android:layout_alignRight="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:contentDescription="@string/retrn"
+        android:layout_alignBottom="@+id/txtReg"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>
